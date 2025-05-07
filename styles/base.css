@@ -105,6 +105,9 @@ main {
 
 .card div {
     padding: 20px;
+}
+
+.card .horizontal-card {
     display: flex;
     gap: 20px;
 }
