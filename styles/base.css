@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* colors */
+    --primary-color: #365FB3;
+    --secondary-color: #527ACC;
+    --accent-color: #333;
+    --accent-color1: #555;
+
+    /* dimensions */
+    --main-width: 1200px;
+
+    /* styling */
+    --border: 1px solid lightgrey;
+    --box-shadow-light: 0 0 10px lightgrey;
+    --box-shadow-hard: 0 0 10px black;
+}
+
+/* body */
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* header */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 10px;
+}
+
+header .header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-hard);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: var(--main-width);
+    justify-self: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    padding: 10px;
+    margin: 0 10px;
+    min-width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--accent-color1);
+    transition: none;
+}
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    max-width: var(--main-width);
+    justify-self: center;
+}
+
+.card {
+    border: var(--border);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: var(--box-shadow-light);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+
+.card div {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    min-height: 100px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: var(--box-shadow-hard);
+}
