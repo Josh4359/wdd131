@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* colors */
+    --primary-color: #365FB3;
+    --secondary-color: #527ACC;
+    --accent-color: #333;
+    --accent-color1: #555;
+
+    /* dimensions */
+    --main-width: 320px;
+    --gap: min(5vw, 10px);
+
+    /* styling */
+    --border: 1px solid lightgrey;
+    --box-shadow-light: 0 0 10px lightgrey;
+    --box-shadow-hard: 0 0 10px black;
+}
+
+/* body */
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+    gap: var(--gap)
+}
+
+/* header */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: var(--gap);
+}
+
+header .header {
+    height: min(40vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 min(10vw, 50px);
+    align-items: center;
+    font-size: min(3vw, 1rem);
+}
+
+header nav {
+    display: none;
+    background-color: var(--accent-color);
+    box-shadow: var(--box-shadow-hard);
+    position: absolute;
+    width: 100%;
+    top: min(40vw, 100px);
+}
+
+header .open {
+    display: unset;
+}
+
+header #menu {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: min(5vw, 2rem);
+}
+
+header #menu::before {
+	content: "☰";
+}
+
+header #menu.open::before {
+	content: "X";
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: 100%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: min(5vw, 1.2rem);
+    background-color: var(--accent-color);
+    padding: var(--gap);
+    height: min(5vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--accent-color1);
+    transition: none;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+    max-width: var(--main-width);
+    justify-self: center;
+}
+
+main h1 {
+    font-size: min(10vw, 2rem);
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 var(--gap);
+    box-sizing: border-box;
+    gap: var(--gap);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album figure {
+    text-align: center;
+}
+
+.album figure a {
+    text-decoration: none;
+    font-size: min(5vw, 1rem);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: min(3vw, 1rem);
+    min-height: min(20vw, 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap);
+    box-sizing: border-box;
+    align-items: center;
+    padding: min(5vw, 50px);
+    box-shadow: var(--box-shadow-hard);
+}
