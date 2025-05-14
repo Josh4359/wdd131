@@ -122,8 +122,8 @@ main h1 {
 }
 
 .album {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
     padding: 0 var(--gap);
     box-sizing: border-box;
@@ -136,11 +136,11 @@ main h1 {
     display: block;
 }
 
-.album figure {
+.album figcaption {
     text-align: center;
 }
 
-.album figure a {
+.album figcaption a {
     text-decoration: none;
     font-size: min(5vw, 1rem);
 }

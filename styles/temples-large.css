@@ -44,9 +44,8 @@
     /* main */
 
     .album {
-        padding: 0 min(5vw, 50px);
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(40vw, 200px), 1fr));
+        padding: 0 min(5vw, 50px);
     }
 
     /* footer */
