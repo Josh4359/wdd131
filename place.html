@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Josh | Country Page">
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/tokyo-large.webp" width="1920" height="1280">
+                <img src="images/tokyo-small.webp" alt="Tokyo" width="500" height="750">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+            <div class="stat">
+                <p>Area:</p>
+                <p id="area">377,972 sq km</p>
+            </div>
+            <div class="stat">
+                <p>Population:</p>
+                <p id="population">123,103,479</p>
+            </div>
+            <div class="stat">
+                <p>Capital:</p>
+                <p id="capital">Tokyo</p>
+            </div>
+            <div class="stat">
+                <p>Languages:</p>
+                <p id="languages">Japanese</p>
+            </div>
+            <div class="stat">
+                <p>Currency:</p>
+                <p id="currency">Yen</p>
+            </div>
+            <div class="stat">
+                <p>Time Zone:</p>
+                <p id="time_zone">UTC+9</p>
+            </div>
+            <div class="stat">
+                <p>Calling Code:</p>
+                <p id="calling">+81</p>
+            </div>
+            <div class="stat">
+                <p>Internet TLD:</p>
+                <p id="tld">.jp</p>
+            </div>
+        </section>
+        <section>
+            <h2>Weather <div id="weather_emoji">⛅</div></h2>
+            <img id="weather_svg" src="images/weather.svg" alt="Weather">
+            <div class="stat">
+                <p>Temperature:</p>
+                <p id="temp">placeholder</p>
+            </div>
+            <div class="stat">
+                <p>Conditions:</p>
+                <p id="conditions">placeholder</p>
+            </div>
+            <div class="stat">
+                <p>Wind:</p>
+                <p id="wind">placeholder</p>
+            </div>
+            <div class="stat">
+                <p>Wind Chill:</p>
+                <p id="chill">placeholder</p>
+            </div>
+        </section>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>

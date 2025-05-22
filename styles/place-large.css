@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+    /* main */
+
+    main {
+        padding-top: max(calc(100vh - 100px), 500px);
+    }
+
+    section {
+        position: absolute;
+        width: 300px;
+    }
+
+    section h2 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    #weather_emoji {
+        display: unset;
+    }
+
+    #weather_svg {
+        display: none;
+    }
+
+    section:first-of-type {
+        top: 150px;
+        left: 10vw;
+    }
+
+    section:last-of-type {
+        top: 400px;
+        right: 10vw;
+    }
+}
