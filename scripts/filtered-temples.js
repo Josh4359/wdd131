@@ -138,7 +138,7 @@ function updateAlbum(condition) {
 			<div class="fig-stat"><p class="stat-key">Dedicated:</p><p>${temple.dedicated}</p></div>
 			<div class="fig-stat"><p class="stat-key">Size:</p><p>${temple.area} sq ft</p></div>
 		</div>
-		<img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">
+		<img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400" height="250">
 	</figure>`;
 	}
 }
