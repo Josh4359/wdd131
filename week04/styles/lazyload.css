@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img {
+    display: block;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
