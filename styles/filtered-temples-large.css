@@ -34,7 +34,7 @@
         flex: 1;
     }
 
-    header nav button {
+    header nav a {
         font-size: min(2vw, 1.2rem);
         height: 100%;
         box-sizing: border-box;

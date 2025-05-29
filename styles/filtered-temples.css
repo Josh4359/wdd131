@@ -88,7 +88,7 @@ header nav ul {
     width: 100%;
 }
 
-header nav button {
+header nav a {
     all: unset;
     color: white;
     /* text-decoration: none; */
@@ -103,7 +103,7 @@ header nav button {
     transition: background-color 0.3s ease;
 }
 
-header nav button:hover {
+header nav a:hover {
     background-color: var(--accent-color1);
     transition: none;
 }
