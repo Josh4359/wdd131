@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get">
+            <div class="form-item">
+                <label for="product_name">Product Name</label>
+                <select id="product_name" name="product_name", required>
+                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <div class="sub_label">Rating</div>
+                <div class="rating">
+                    <label class="star" for="one_star">&starf;</label>
+                    <input type="radio" name="rating" id="one_star" value="one_star">
+                    <label class="star" for="two_star">&starf;</label>
+                    <input type="radio" name="rating" id="two_star" value="two_star">
+                    <label class="star" for="three_star">&starf;</label>
+                    <input type="radio" name="rating" id="three_star" value="three_star">
+                    <label class="star" for="four_star">&starf;</label>
+                    <input type="radio" name="rating" id="four_star" value="four_star">
+                    <label class="star" for="five_star">&starf;</label>
+                    <input type="radio" name="rating" id="five_star" value="five_star">
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label for="installation_date">Date of Installation</label>
+                <input type="date" id="installation_date" name="installation_date" required>
+            </div>
+
+            <div class="form-item">
+                <div class="sub_label">
+                    Which features did you find useful in the product?
+                    <br><i>(Check all that apply)</i>
+                </div>
+                <div class="useful_features">
+                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="ease_of_use" name="ease_of_use" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label for="written_review">Written Review <i>(Optional)</i></label>
+                <textarea id="written_review" name="written_review"></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="your_name">Your Name <i>(Optional)</i></label>
+                <input type="text" id="your_name" name="your_name"></textarea>
+            </div>
+
+            <input type="submit" value="Post Review">
+            
+            <div id="submit-tracker"></div>
+        </form>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>
