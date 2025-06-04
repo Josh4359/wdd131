@@ -60,13 +60,7 @@ stars.forEach(radio => {
 
 // submit
 
-const submit_tracker = document.querySelector('#submit-tracker')
-
-let review_count = Number(window.localStorage.getItem('review-count'));
-
-submit_tracker.textContent = `You've posted ${review_count} reviews!`;
-
 document.querySelector('form').addEventListener('submit', function(event) {
-    review_count++;
+    let review_count = Number(window.localStorage.getItem('review-count')) + 1;
     window.localStorage.setItem('review-count', review_count);
 });

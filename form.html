@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Josh | Product Review">
     <link href="styles/form.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +18,10 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get">
+        <form method="get" action="review.html">
             <div class="form-item">
                 <label for="product_name">Product Name</label>
-                <select id="product_name" name="product_name", required>
+                <select id="product_name" name="product_name" required>
                     <option value="" disabled selected>Select a Product... &#9662;</option>
                 </select>
             </div>
@@ -65,7 +67,7 @@
 
             <div class="form-item">
                 <label for="your_name">Your Name <i>(Optional)</i></label>
-                <input type="text" id="your_name" name="your_name"></textarea>
+                <input type="text" id="your_name" name="your_name">
             </div>
 
             <input type="submit" value="Post Review">
