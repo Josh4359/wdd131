@@ -389,7 +389,7 @@ input {
     box-sizing: border-box;
 }
 
-input[type="text"] {
+input[type="text"], input[type="date"] {
     padding: 0 6px;
 }
 
