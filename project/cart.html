@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBite Cart</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="eBite | My Cart">
+    <link href="styles/project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/utility.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="home.html">eBite</a></h1>
+        <a href="cart.html"><img id="cart-icon" src="images/cart.svg" alt="Cart icon"></a>
+    </header>
+    <main>
+        <div class="cart-page">
+            <div>
+                <h2>My Cart</h2>
+                <table class="cart" id="cart">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a id="checkout-button" href="checkout.html">Proceed to Checkout</a>
+            </div>
+            <div>
+                <h2>Purchase History</h2>
+                <table class="cart" id="purchase-history">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <a id="reset" href="javascript:void(0)">Reset</a>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>

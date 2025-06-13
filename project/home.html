@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBite Home Page</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="eBite | Home Page">
+    <link href="styles/project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/utility.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="home.html">eBite</a></h1>
+        <a href="cart.html"><img id="cart-icon" src="images/cart.svg" alt="Cart icon"></a>
+    </header>
+    <main>
+        <div id="filters">
+            <div id="search-container" class="search-item">
+                <input type="text" id="search" placeholder="Search...">
+                <img id="search-icon" src="images/search.svg" alt="Search icon">
+            </div>
+            <select id="search-sort" class="search-item">
+                <option value="name">Name</option>
+                <option value="date">Date listed (newest)</option>
+                <option value="date-reverse">Date listed (oldest)</option>
+                <option value="price">Price (lowest)</option>
+                <option value="price-reverse">Price (highest)</option>
+            </select>
+            <select id="search-condition" class="search-item">
+                <option value="all">All</option>
+                <option value="new">New</option>
+                <option value="refurbished">Refurbished</option>
+                <option value="used">Used</option>
+                <option value="broken">For parts</option>
+            </select>
+        </div>
+        <div id="product-list"></div>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>

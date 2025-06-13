@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBite Checkout</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="eBite | Checkout">
+    <link href="styles/project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/utility.js" defer></script>
+    <script src="scripts/checkout.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="home.html">eBite</a></h1>
+        <a href="cart.html"><img id="cart-icon" src="images/cart.svg" alt="Cart icon"></a>
+    </header>
+    <main>
+        <div class="checkout-page">
+            <div id="checkout-cart">
+                <table class="cart">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div id="checkout-form">
+                <div><i>This is not a real checkout page. Do not enter your actual info.</i></div>
+
+                <form method="get" action="review.html">
+                    <div class="form-item">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="street">Street</label>
+                        <input type="text" id="street" name="street" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="zip">ZIP</label>
+                        <input class="number-input" type="text" minlength="5" maxlength="9" placeholder="#####" id="zip" name="zip" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="card-number">Credit Card Number</label>
+                        <input class="number-input" type="text" minlength="19" maxlength="19" placeholder="#### #### #### ####" id="card-number" name="card-number" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="expiration">Expiration Date</label>
+                        <input type="month" id="expiration" name="expiration" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="ccv">CCV</label>
+                        <input class="number-input" type="text" minlength="3" maxlength="3" placeholder="###" id="ccv" name="ccv" required>
+                    </div>
+
+                    <input type="submit" value="Confirm Purchase">
+                </form>
+            </div>
+        </div>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>

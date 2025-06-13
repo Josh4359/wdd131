@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBite Product Page</title>
+    <meta name="author" content="Josh">
+    <meta name="description" content="eBite | Product Page">
+    <link href="styles/project.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/utility.js" defer></script>
+    <script src="scripts/product.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="home.html">eBite</a></h1>
+        <a href="cart.html"><img id="cart-icon" src="images/cart.svg" alt="Cart icon"></a>
+    </header>
+    <main>
+        <div class="product-page">
+            <div id="product-name"></div>
+            <div id="product-content">
+                <div id="product-image"></div>
+                <div id="product-stats"></div>
+            </div>
+            <div id="product-buttons">
+                <a id="buy" href="javascript:void(0)">Buy</a>
+                <a id="cart" href="javascript:void(0)">Add to Cart</a>
+            </div>
+        </div>
+    </main>
+    <div></div>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Josh, United States
+        </p>
+        <p id="lastModified">placeholder</p>
+    </footer>
+</body>
+</html>
