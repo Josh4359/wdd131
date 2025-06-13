@@ -63,7 +63,7 @@ window.products = [
     date: new Date("2025-03-04T02:24:00"),
     delivery: "3 week",
     condition: "used",
-    image: "images/half-eaten-cheeseburger-ai.png",
+    image: "images/half-eaten-cheeseburger-ai.webp",
     width: 1024,
     height: 1024,
   },
@@ -79,7 +79,7 @@ window.products = [
     date: new Date("2025-05-19T06:41:00"),
     delivery: "2 day",
     condition: "for parts",
-    image: "images/empty-pizza-box-ai.png",
+    image: "images/empty-pizza-box-ai.webp",
     width: 1024,
     height: 1024
   },
@@ -95,7 +95,7 @@ window.products = [
     date: new Date("2025-06-11T07:23:00"),
     delivery: "7 day",
     condition: "refurbished",
-    image: "images/refolded-burrito-ai.png",
+    image: "images/refolded-burrito-ai.webp",
     width: 1024,
     height: 1024
   },
@@ -111,7 +111,7 @@ window.products = [
     date: new Date("2025-06-04T07:23:00"),
     delivery: "4 day",
     condition: "for parts",
-    image: "images/picked-onions-ai.png",
+    image: "images/picked-onions-ai.webp",
     width: 1024,
     height: 1024
   }
