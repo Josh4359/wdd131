@@ -64,8 +64,8 @@ window.products = [
     delivery: "3 week",
     condition: "used",
     image: "images/half-eaten-cheeseburger-ai.webp",
-    width: 1024,
-    height: 1024,
+    width: 512,
+    height: 512,
   },
   {
     name: "Empty Pizza Box",
@@ -80,8 +80,8 @@ window.products = [
     delivery: "2 day",
     condition: "for parts",
     image: "images/empty-pizza-box-ai.webp",
-    width: 1024,
-    height: 1024
+    width: 512,
+    height: 512
   },
   {
     name: "Refolded Burrito",
@@ -96,8 +96,8 @@ window.products = [
     delivery: "7 day",
     condition: "refurbished",
     image: "images/refolded-burrito-ai.webp",
-    width: 1024,
-    height: 1024
+    width: 512,
+    height: 512
   },
   {
     name: "Picked Onions",
@@ -112,8 +112,8 @@ window.products = [
     delivery: "4 day",
     condition: "for parts",
     image: "images/picked-onions-ai.webp",
-    width: 1024,
-    height: 1024
+    width: 512,
+    height: 512
   }
 ]
 
